@@ -1,5 +1,5 @@
 
-export default function SearchedMoviePage () 
+export default function MovieDetail () 
 
 { return (
   

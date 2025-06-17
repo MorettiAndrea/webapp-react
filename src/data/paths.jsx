@@ -1,6 +1,6 @@
 const paths = {
   homePage: () => "/",
-  SearchedMoviePage: () => "/searchedmovie",
+  MoviesDetails: () => "/movies",
 };
 
 export default paths;

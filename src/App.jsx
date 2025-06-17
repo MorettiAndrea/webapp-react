@@ -9,8 +9,8 @@ import paths from "./data/paths";
 import DefaultLayout from "./layout/defaultLayout";
 
 // pages import
-import HomePage from "./pages/HomePage";
-import SearchedMoviePage from "./pages/SearchedMoviePage";
+import MovieList from "./pages/HomePage";
+import MoviesDetails from "./pages/MoviesDetails";
 
 
 
@@ -20,8 +20,8 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route element = {<DefaultLayout />}>
-          <Route path={paths.homePage()} element={<HomePage />} />
-          <Route path={paths.SearchedMoviePage()} element={<SearchedMoviePage />} />
+          <Route path={paths.homePage()} element={<MovieList />} />
+          <Route path={paths.MoviesDetails()} element={<MoviesDetails />} />
         </Route>
         </Routes>
       </BrowserRouter>

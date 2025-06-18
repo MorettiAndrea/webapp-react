@@ -4,8 +4,8 @@ import { Outlet } from "react-router-dom";
 
 // components import
 
-import Header from "../compontents/Header";
-import Footer from "../compontents/Footer";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export default function DefaultLayout (){ 
 return(

@@ -1,8 +1,9 @@
 
 const paths = {
-  homePage: "/",
-  moviesList:  "/movies",
-  moviesDetails: "/movies/:id",
+  Homepage: "/",
+  AboutPage: "/about",
+  MoviesListPage:  "/movies",
+  MoviesDetailsPage: "/movies/:id",
 };
 
 export default paths;

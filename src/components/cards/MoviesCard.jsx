@@ -11,17 +11,17 @@ export default function MoviesCard({
 }) {
   return (
     <>
-      <div className="col-4">
+    
           <div className="card">
-            <img src={image} className="card-img-top" alt={title} /> 
+          { image && <img src={image} className="card-img-top" alt={title} /> }
             <div className="card-body text-center">
                 <h3 className="card-title">{title} ({relase_year})</h3>
-                <p><strong>{director}</strong></p>
-                <p className="card-text">{abstract}</p>
-                <Link to={`/movies/${id}`} className="btn btn-primary">Movie dettails</Link> 
+               {director && <p className="card-text"><strong>{director}</strong></p>}
+               {abstract && <p className="card-text">{abstract}</p>}
+                <Link to={`/movies/${id}`} className="btn btn-primary">Movie details</Link> 
             </div>
         </div>
-      </div>
+      
     </>
   );
 }

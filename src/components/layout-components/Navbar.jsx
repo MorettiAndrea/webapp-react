@@ -17,11 +17,6 @@ export default function Navbar() {
                   Movies list
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to={paths.moviesDetails}>
-                  Movies Details
-                </NavLink>
-              </li>
             </ul>
           </div>
         </div>

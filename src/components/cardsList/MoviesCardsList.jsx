@@ -5,11 +5,12 @@ const backEndUrl =import.meta.env.VITE_BACKEND_URL
 const backEndPort =import.meta.env.VITE_BACKEND_PORT+"/movies"
 
 export default function MovieCardsList() { 
-    
+    const[movies,setMovies] = useState([])
+    const[error,SetError] = useState("")
 
     const FetchMovies = () => {axios.get(`${backEndUrl}${backEndPort}`).then((res)=>{setMovies(res.data.data);
-    })}
-    const[movies,setMovies] = useState([])
+    }).catch((err) =>{SetError(err)})}
+    
     useEffect(FetchMovies,[])
     
     

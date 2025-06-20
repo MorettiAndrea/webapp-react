@@ -11,7 +11,7 @@ import DefaultLayout from "./layout/defaultLayout";
 // pages import
 import Homepage from "./pages/Homepage";
 import { MoviesListPage } from "./pages/MoviesListPage";
-import MoviesDetailPage from "./pages/MoviesDetails"
+import MoviesDetailPage from "./pages/MoviesDetailsPage"
 import AboutPage from "./pages/aboutPage";
 
 

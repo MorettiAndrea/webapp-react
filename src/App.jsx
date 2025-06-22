@@ -13,6 +13,7 @@ import Homepage from "./pages/Homepage";
 import { MoviesListPage } from "./pages/MoviesListPage";
 import MoviesDetailPage from "./pages/MoviesDetailsPage"
 import AboutPage from "./pages/aboutPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 
 
@@ -25,6 +26,7 @@ export default function App() {
           <Route path={paths.Homepage}>
           <Route index element={<Homepage />} />
           <Route path={paths.AboutPage} element={<AboutPage />} />
+          <Route path={paths.NotFoundPage} element={<NotFoundPage />} />
           </Route>
           <Route path={paths.MoviesListPage}>
           <Route index element={<MoviesListPage />} />

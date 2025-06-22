@@ -26,14 +26,15 @@ export default function MovieDetailsCardList() {
   }, [])
 
   
-  if (reviews.length === 0) {
-    return <div className="text-center">{error}</div>
+  if (!reviews.length) {
+    return <h1 className="text-center">Coudn't find requested movie</h1>
   }
 
   return (
     <>
       <div className="container">
         <div className="row justify-content-center mb-1 mt-1">
+          <h2 className="text-center">Movie review</h2> 
           {reviews.map((review) => (
             <MovieDetailsCard
               key={review.id}

@@ -4,7 +4,7 @@ import axios from "axios";
 const backEndUrl =import.meta.env.VITE_BACKEND_URL
 const backEndPort =import.meta.env.VITE_BACKEND_PORT+"/movies"
 
-export default function MovieCardsList() { 
+export default function MoviesCardsList() { 
     const[movies,setMovies] = useState([])
     const[error,SetError] = useState("")
 

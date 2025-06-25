@@ -9,7 +9,7 @@ import paths from "./data/paths";
 import DefaultLayout from "./layout/defaultLayout";
 
 // pages import
-import Homepage from "./pages/Homepage";
+import Homepage from "./pages/HomePage";
 import { MoviesListPage } from "./pages/MoviesListPage";
 import MoviesDetailPage from "./pages/MoviesDetailsPage"
 import AboutPage from "./pages/aboutPage";

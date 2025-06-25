@@ -1,3 +1,6 @@
+
+/* utility */
+
 * {
   margin: 0;
   padding: 0;
@@ -24,4 +27,16 @@ ul {
 
 .border {
   border: 2px dashed black;
+}
+
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(222, 222, 222, 0.801);
+  backdrop-filter: blur(5px);
+  z-index: 10;
 }

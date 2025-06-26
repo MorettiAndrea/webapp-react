@@ -19,10 +19,10 @@ export default function ReviewForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`${apiUrl}${id}`, formData)
+      .post(`${apiUrl}${id}/reviews`, formData)
       .then((response) => {
-        const { name, vote, text } = response.data;
-        const backEndResponse = response.data;
+        const { name, vote, text } = response.data.reviews;
+        const backEndResponse = response.data.reviews;
         console.log(backEndResponse);
         name && vote && text
           ? alert("recensione inserita con successo")

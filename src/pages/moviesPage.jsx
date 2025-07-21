@@ -23,16 +23,18 @@ export default function MoviesPage() {
   return (
     <>
       {isLoading && (
-        <div className="container d-center">
-          <h1 className="mt-1">Movie List</h1>
-          <div className="row">
-            {movies.map((movie) => (
-              <div className="col-4">
-                <MovieCard key={movie.id} props={movie} />
-              </div>
-            ))}
+        <>
+          <div className="container">
+            <h1 className="my-3 text-center">Movie List</h1>
+            <div className="row">
+              {movies.map((movie) => (
+                <div className="col-4">
+                  <MovieCard key={movie.id} props={movie} />
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        </>
       )}
     </>
   );

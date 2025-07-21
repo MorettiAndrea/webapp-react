@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 export default function ReviewCard({ Review }) {
   return (
     <>
-      <div class="card">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
+      <div className="card">
+        <ul className="list-group list-group-flush">
+          <li className="list-group-item">
             <strong>Nome: </strong>
             {Review.name}
           </li>
-          <li class="list-group-item">
-            <strong>Nome: </strong>
-            {Review.text}
-          </li>
-          <li class="list-group-item">
-            <strong>Nome: </strong>
+          <li className="list-group-item">
+            <strong>Vote: </strong>
             {Review.vote}
+          </li>
+          <li className="list-group-item">
+            <strong>Text: </strong>
+            {Review.text}
           </li>
         </ul>
       </div>

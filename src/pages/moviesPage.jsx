@@ -28,7 +28,9 @@ export default function MoviesPage() {
             <h1 className="my-3 text-center">Movie List</h1>
             <div className="row">
               {movies.map((movie) => (
-                <MovieCard key={movie.id} Movie={movie} />
+                <div className="col-4">
+                  <MovieCard key={movie.id} Movie={movie} />
+                </div>
               ))}
             </div>
           </div>

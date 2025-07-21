@@ -14,7 +14,10 @@ export default function App() {
             <Route path={paths.homePage} element={<Homepage />} />
             <Route path={paths.aboutPage} element={<AboutUs />} />
             <Route path={paths.moviesPage} element={<MoviesPage />} />
-            <Route path="movies/:id" element={<MovieDetailPage />} />
+            <Route
+              path={`${paths.moviesPage}/:id`}
+              element={<MovieDetailPage />}
+            />
           </Route>
         </Routes>
       </BrowserRouter>

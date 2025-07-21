@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-export default function MovieCard({ Movie }) {
+export default function MovieCardForDetail({ Movie }) {
   return (
     <>
-      <div className="card my-w-100" key={Movie.id}>
+      <div className="card w-100" key={Movie.id}>
         <img src={Movie.image} className="card-img-top" alt={Movie.title}></img>
         <div className="card-body">
           <h5 className="card-title text-center">
@@ -16,11 +16,7 @@ export default function MovieCard({ Movie }) {
             <strong>Genre: </strong> {Movie.genre}
           </p>
           <p className="card-text text-center">{Movie.abstract}</p>
-          <div className="d-center">
-            <Link to={`${Movie.id}`} className="btn btn-primary ">
-              Go to movie detail
-            </Link>
-          </div>
+          <div className="d-center"></div>
         </div>
       </div>
     </>
